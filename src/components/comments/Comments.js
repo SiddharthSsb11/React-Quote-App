@@ -5,6 +5,7 @@ import NewCommentForm from './NewCommentForm';
 
 const Comments = () => {
   const [isAddingComment, setIsAddingComment] = useState(false);
+  console.log('comments');
 
   const startAddCommentHandler = () => {
     setIsAddingComment(true);

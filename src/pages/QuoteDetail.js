@@ -1,5 +1,5 @@
-import React from 'react'
-import { useParams, Route } from 'react-router-dom'
+import React, {Fragment} from 'react'
+import { useParams, Route, Link } from 'react-router-dom'
 import Comments from '../components/comments/Comments'
 import HighlightedQuote from '../components/quotes/HighlightedQuote'
 
@@ -11,20 +11,24 @@ const DUMMY_QUOTES = [
 const QuoteDetail = () => {
 
     const params = useParams();
-    console.log(params);
+    console.log(params, 'exact');
 
     const quote = DUMMY_QUOTES.find((quote) => quote.id === params.quoteId);
     if(!quote){
         return(<p>No Quote Found</p>)
     }
     return (
-        <section>
+        <Fragment>
             <HighlightedQuote text={quote.text} author={quote.author}></HighlightedQuote>
-            <p>{params.quoteId}</p>
+            <Route path = {`/quotes/${params.quoteId}`} exact>
+                <div className="centered">
+                    <Link className = 'btn--flat' to = {`/quotes/${params.quoteId}/comments`}>Load Comments</Link>
+                </div>
+            </Route>
             <Route path = {`/quotes/${params.quoteId}/comments`}>
                 <Comments></Comments>
             </Route>
-        </section>
+        </Fragment>
     )
 }
 
