@@ -34,18 +34,11 @@ const QuoteForm = (props) => {
     <Fragment>
       <Prompt
         when={isEntering}
-        message={(location) =>
-          "Are you sure you want to leave? All your entered data will be lost!"
-        }
-      ></Prompt>
+        message={(location) =>"Are you sure you want to leave? All your entered data will be lost!"}>
+      </Prompt>
       <Card>
         <form onFocus = {formFocusedHandler} className={classes.form} onSubmit={submitFormHandler}>
-          {props.isLoading && (
-            <div className={classes.loading}>
-              <LoadingSpinner />
-            </div>
-          )}
-
+          {props.isLoading && (<div className={classes.loading}><LoadingSpinner /></div>)}
           <div className={classes.control}>
             <label htmlFor="author">Author</label>
             <input type="text" id="author" ref={authorInputRef} />
