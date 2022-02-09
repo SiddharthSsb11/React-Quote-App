@@ -1,18 +1,43 @@
-# Getting Started with Create React App
+# Text-A-Lot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A Simple Quote Apllication
 
-## Available Scripts
+A simple Quote apoplication made using [React JS](https://reactjs.org/docs/getting-started.html), to post new quotes and interact, comment on previously posted posts by others. Powered by [Firebase](https://firebase.google.com/).
 
-In the project directory, you can run:
+This application uses [React JS](https://reactjs.org/docs/getting-started.html) component oriented UI creation paradigm. All components are written in [JSX](https://reactjs.org/docs/jsx-in-depth.html) and ES6 style and are
+combined to get a single build for production purpose using [Webpack 5](https://webpack.js.org/concepts/).
 
-### `npm start`
+ES6 `module` creation along with `import /export` is used. [Babel](https://babeljs.io/docs/en/babel-preset-react) is used to _transpile_ all [JSX](https://reactjs.org/docs/jsx-in-depth.html) code to vanilla JavaScript code. To install all the dependecies `npm` is used.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This is a _responsive web application_ for viewing in both Mobile and Desktop.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Few Screenshots
+
+![AllQuotes](/screenshots/quote1.png "AllQuotes")
+![Comments](/screenshots/quote2.png "Comments")
+
+## Features
+
+- Add your quotes.
+- Comment on previously posted quotes.
+- All the quotes are stored in the firebase realtime-database i.e. <i>persistant</i>
+- React-router is used in this SPA app.
+
+## Hosted/Deployed
+
+https://react-router-quotes-ssb.netlify.app/quotes
+
+### Clone the repository:
+```
+git clone https://github.com/SiddharthSsb11/React-Quote-App.git
+```
+
+
+### Install Dependencies
+
+```
+npm install
+```
 
 ### `npm test`
 
@@ -39,32 +64,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
