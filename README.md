@@ -1,4 +1,4 @@
-# Text-A-Lot
+# Great Quotes
 
 > A Simple Quote Apllication
 
